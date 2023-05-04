@@ -148,3 +148,13 @@ public extension UIView {
         }
     }
 }
+
+extension UIView {
+    @objc public func showWaitingLoader() {
+        self.showAnimatedGradientSkeleton()
+    }
+    
+    @objc public func hideWaitingLoader() {
+        self.hideSkeleton()
+    }
+}
